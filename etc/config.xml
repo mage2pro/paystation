@@ -1,0 +1,25 @@
+<?xml version='1.0'?>
+<config
+    xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance'
+    xsi:noNamespaceSchemaLocation='urn:magento:module:Magento_Store:etc/config.xsd'
+>
+    <default>
+		<df_payment>
+			<paystation>
+				<countries>NZ</countries>
+				<country_restriction>whitelist</country_restriction>
+				<currency>NZD</currency>
+				<description>{store.domain} // {customer.name} // {order.id}</description>
+				<requireBillingAddress>1</requireBillingAddress>
+				<payment_action>authorize_capture</payment_action>
+				<title>Paystation</title>
+				<title_backend>Paystation</title_backend>
+			</paystation>
+		</df_payment>
+        <payment>
+            <dfe_paystation>
+				<model>Dfe\Paystation\Method</model>
+            </dfe_paystation>
+        </payment>
+    </default>
+</config>
