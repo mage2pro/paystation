@@ -7,14 +7,14 @@ namespace Dfe\Paystation;
  */
 final class Charge extends \Df\PaypalClone\Charge {
 	/**
-	 * 2017-04-10
+	 * 2017-08-19
 	 * @override
-	 * @see \Df\PaypalClone\Charge::pCharge()
+	 * @see \Df\PaypalClone\Charge::k_MerchantId()
 	 * @used-by \Df\PaypalClone\Charge::p()
-	 * @return array(string => mixed)
+	 * @return string
 	 */
-	protected function pCharge() {$s = $this->s(); return [];}
-
+	protected function k_MerchantId() {return '';}
+	
 	/**
 	 * 2017-04-10
 	 * @override
@@ -32,4 +32,13 @@ final class Charge extends \Df\PaypalClone\Charge {
 	 * @return string
 	 */
 	protected function k_Signature() {return '';}
+
+	/**
+	 * 2017-04-10
+	 * @override
+	 * @see \Df\PaypalClone\Charge::pCharge()
+	 * @used-by \Df\PaypalClone\Charge::p()
+	 * @return array(string => mixed)
+	 */
+	protected function pCharge() {$s = $this->s(); return [];}
 }
