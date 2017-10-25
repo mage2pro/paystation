@@ -1,1 +1,1 @@
-define(['Df_Payment/loader'], function(l) {return l('Dfe_Paystation', 'dfe_paystation');});
+define(['Df_Payment/loader'], function(l) {return l('Dfe_Paystation');});
