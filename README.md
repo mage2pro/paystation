@@ -1,4 +1,4 @@
-The extension integrates your Magento 2 based webstore with the **[Paystation](http://paystation.co.nz/)** payment service (New Zealand).
+This extension integrates a Magento 2 based webstore with the **[Paystation](http://paystation.co.nz/)** payment service (New Zealand).
 
 ## How to buy
 The extension is not released yet, so there is no way to buy it just now.  
