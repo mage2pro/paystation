@@ -4,7 +4,7 @@
 	xsi:noNamespaceSchemaLocation="urn:magento:framework:App/etc/routes.xsd"
 >
 	<router id='standard'>
-		<route id='Dfe_Paystation' frontName='dfe-paystation'>
+		<route frontName='dfe-paystation' id='Dfe_Paystation'>
 			<module name='Dfe_Paystation'/>
 		</route>
 	</router>
